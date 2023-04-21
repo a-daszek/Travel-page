@@ -29,9 +29,30 @@
     </header>
     <main>
         <section id="hero">
+            <div id="hero-content">
+            <h1>Strona podróżnicza</h1>
+            <p>Poznajmy świat!</p>
+            <a href="{{ url_for('places') }}">Odkryj piękne miejsca</a>
+            </div>
 
         </section>
         <section id="highlights">
+            <h2>Odwiedzone</h2>
+            <ul id="destinations">
+                <li class="destination">
+                    <img src="static/leba.jpg" alt="Plaża w Łebie">
+                    <p>Łeba <strong>Polska</strong></p>
+                </li>
+                <li class="destination">
+                    <img src="static/wieden.jpg" alt="Pomnik Straussa">
+                    <p>Wiedeń <strong>Austria</strong></p>
+
+                </li>
+                <li class="destination">
+                    <img src="static/wydmy.jpg" alt="Wydmy Czołpińskie">
+                    <p>Wydmy Czołpińskie <strong>Polska</strong></p>
+                </li>
+            </ul>
 
         </section>
     </main>
