@@ -14,7 +14,7 @@
 <body>
     <header> 
         <div id="page-logo">
-            <a href="/index.html">Cele podróży</a>
+            <a href="{{ url_for('home') }}">Cele podróży</a>
         </div>
         <nav>
             <ul>
@@ -56,6 +56,15 @@
 
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com"><img src="static/insta.png" alt="Instagram icon"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com"><img src="static/facebook.png" alt="Facebook icon"></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

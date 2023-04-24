@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='shared.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='places.css') }}">
+    <title>Cele podróży</title>
+</head>
+<body>
+    <header>
+        <div id="page-logo">
+            <a href="{{ url_for('home') }}">Cele podróży</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('places') }}">Przyszłe podróże</a>
+                </li>
+                <li>
+                    <a href="">O mnie</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <ul>
+          <li>
+              <img src="{{ url_for('static', filename='iceland.jpg') }}" alt="Iceland photo">
+              <div class="item-content">
+                  <h2>Islandia</h2>
+                  <p>
+                      Diamentowa plaża - nazwa idealnie opisuje to miejsce, jest to po prostu plaża z tak ogromnymi i
+                      pięknymi odłamkami lodu, że kojarzą się z diamentami.
+                  </p>
+              </div>
+              <div class="actions">
+                  <a href="https://pl.wikipedia.org/wiki/Jökulsárlón">Eksploruj!</a>
+              </div>
+          </li>
+      </ul>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com"><img src="{{ url_for('static', filename='insta.png') }}" alt="Instagram icon"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com"><img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook icon"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
