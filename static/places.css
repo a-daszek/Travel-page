@@ -3,8 +3,21 @@ body {
   color: rgb(68, 68, 68);
 }
 
+#page-logo a {
+  color: rgb(0, 160, 117);
+}
+
 header {
   position: static;
+}
+
+header a {
+  color: rgb(0, 160, 117);
+}
+
+header nav a:hover {
+  background-color: rgb(0, 160, 117);
+  color: rgb(134, 194, 156);
 }
 
 main ul {
